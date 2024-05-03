@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head> </head>
+  <body>
+    <form style="display: none" id="login-form" method="POST">
+      <input type="text" name="username" placeholder="your username" />
+      <input type="password" name="password" placeholder="your password" />
+      <input type="submit" value="Login" />
+    </form>
+
+    <form id="search-form" method="GET">
+      <input type="text" name="q" placeholder="your search" />
+      <input type="submit" value="Search" />
+    </form>
+
+    <div id="content-container"></div>
+
+    <div id="searchbox"></div>
+    <div id="hits"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.23.3/dist/algoliasearch-lite.umd.js"
+      integrity="sha256-1QNshz86RqXe/qsCBldsUu13eAX6n/O98uubKQs87UI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-instantsearch@7.7.3/dist/umd/ReactInstantSearch.min.js"
+      integrity="sha256-ZlYpbbfxjAyfDIYq5fw3H7ESUqkGe7ehh77pXuvjVQE="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./client.js"></script>
+  </body>
+</html>
